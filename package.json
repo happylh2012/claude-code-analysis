@@ -1,0 +1,39 @@
+{
+  "name": "claude-code-analysis",
+  "version": "1.0.0",
+  "description": "Claude Code / Cline 源码拆解分析 - 深度解析 AI 编程代理架构",
+  "scripts": {
+    "example:api": "tsx examples/api-usage.ts",
+    "example:tools": "tsx examples/tools-usage.ts",
+    "example:task": "tsx examples/task-execution.ts",
+    "example:browser": "tsx examples/browser-usage.ts",
+    "example:mcp": "tsx examples/mcp-usage.ts",
+    "docs:serve": "npx serve docs",
+    "docs:build": "echo 'Markdown docs ready in docs/'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/claude-code-analysis.git"
+  },
+  "keywords": [
+    "claude-code",
+    "cline",
+    "ai-agent",
+    "code-analysis",
+    "llm",
+    "mcp",
+    "programming-assistant"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "@anthropic-ai/mcp": "^0.1.0",
+    "playwright": "^1.40.0"
+  }
+}
