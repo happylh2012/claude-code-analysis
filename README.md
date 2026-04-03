@@ -20,6 +20,8 @@
 | [04-Context-Manager](./docs/04-Context-Manager.md) | 上下文管理 | `src/core/context/` | 326 |
 | [05-MCP-Integration](./docs/05-MCP-Integration.md) | Model Context Protocol | `src/services/mcp/` | 303 |
 | [06-Browser-Control](./docs/06-Browser-Control.md) | 浏览器自动化 | `src/services/browser/` | 448 |
+| [07-Function-Call-Chain](./docs/07-Function-Call-Chain.md) | 完整函数调用链实例 | 全流程追踪 | 400+ |
+| [08-Tool-Handlers-Deep-Dive](./docs/08-Tool-Handlers-Deep-Dive.md) | 24 种工具深度解析 | handlers/ | 500+ |
 
 ## 🚀 快速开始
 
@@ -83,20 +85,22 @@ claude-code-analysis/
 ├── tsconfig.json          # TypeScript 配置
 ├── SPEC.md                # 规格说明
 │
-├── docs/                  # 核心模块文档
-│   ├── 01-API-Provider.md     # API Provider 层
-│   ├── 02-Task-Engine.md     # 任务执行引擎
-│   ├── 03-Tools-System.md     # 工具系统
-│   ├── 04-Context-Manager.md  # 上下文管理
-│   ├── 05-MCP-Integration.md # MCP 集成
-│   └── 06-Browser-Control.md # 浏览器控制
+├── docs/                  # 核心模块文档 (8 篇，总计 3000+ 行)
+│   ├── 01-API-Provider.md          # API Provider 层 (40+ LLM)
+│   ├── 02-Task-Engine.md           # 任务执行核心引擎 (Plan/Act)
+│   ├── 03-Tools-System.md          # 工具系统 (24 种工具)
+│   ├── 04-Context-Manager.md       # 上下文管理 (Token/规则)
+│   ├── 05-MCP-Integration.md       # MCP 集成 (外部工具扩展)
+│   ├── 06-Browser-Control.md       # 浏览器自动化 (Playwright)
+│   ├── 07-Function-Call-Chain.md   # 完整调用链实例 (数据流)
+│   └── 08-Tool-Handlers-Deep-Dive.md # 工具处理器深度解析
 │
-└── examples/              # 运行示例
+└── examples/              # 运行示例 (5 个 TypeScript 示例)
     ├── api-usage.ts          # API 使用示例
-    ├── tools-usage.ts        # 工具使用示例
+    ├── tools-usage.ts        # 工具系统示例
     ├── task-execution.ts     # 任务执行示例
-    ├── browser-usage.ts      # 浏览器示例
-    └── mcp-usage.ts          # MCP 示例
+    ├── browser-usage.ts      # 浏览器控制示例
+    └── mcp-usage.ts          # MCP 集成示例
 ```
 
 ## 🔍 源码参考
